@@ -8,8 +8,9 @@ Dosen       : Apan, S.T, M.Pd
 
 ## Authors
 
-- ALWAN FADHIL SENGGONO
-- OKVA WIDI SAPUTRA
+- BAGAS SENO AJI
+- II WIDYA
+- NAJWA FARAH
 - VIDDY VIRSTANDI P.A.P
 ## Deployment
 
