@@ -37,145 +37,267 @@
         <p>&copy; 2024 Pembelajaran Klasifikasi Hewan. Semua hak cipta dilindungi.</p>
     </footer>
 
-    <!-- Modal for Mamalia -->
+    <!-- Modal for Herbivora -->
     <div id="herbivoraModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('herbivoraModal')">&times;</span>
             <h2>Herbivora</h2>
             <div class="tabs">
-                <button class="tablinks" onclick="openTab(event, 'mamaliaTab1')">Tab 1</button>
-                <button class="tablinks" onclick="openTab(event, 'mamaliaTab2')">Tab 2</button>
-                <button class="tablinks" onclick="openTab(event, 'mamaliaTab3')">Tab 3</button>
-                <button class="tablinks" onclick="openTab(event, 'mamaliaTab4')">Tab 4</button>
-                <button class="tablinks" onclick="openTab(event, 'mamaliaTab5')">Tab 5</button>
-                <button class="tablinks" onclick="openTab(event, 'mamaliaTab6')">Tab 6</button>
+                <button class="tablinks" onclick="openTab(event, 'her1')">Kambing</button>
+                <button class="tablinks" onclick="openTab(event, 'her2')">Sapi</button>
+                <button class="tablinks" onclick="openTab(event, 'her3')">Gajah</button>
+                <button class="tablinks" onclick="openTab(event, 'her4')">Kuda</button>
+                <button class="tablinks" onclick="openTab(event, 'her5')">Keledai</button>
+                <button class="tablinks" onclick="openTab(event, 'her6')">Kakatua</button>
             </div>
-            <div id="mamaliaTab1" class="tabcontent">
+            <div id="her1" class="tabcontent">
                 <div class="content-left">
-                    <img src="mamalia_1.jpg" alt="Mamalia 1">
+                    <img src="/gambar/herbivora/kambing.png" alt="Kambing">
                     <video src="mamalia_1.mp4" controls></video>
                 </div>
                 <div class="content-right">
-                    <h3>Nama Hewan 1</h3>
+                    <h3>Kambing</h3>
                     <p>Penjelasan singkat tentang hewan ini.</p>
-                    <button onclick="playSound('mamalia_1')">🔊</button>
+                    <button onclick="playSound('suara/herbivora/kambing.mp3')">🔊</button>
                 </div>
             </div>
-            <!-- Repeat similar structure for other tabs with respective IDs -->
+
+            <div id="her2" class="tabcontent">
+                <div class="content-left">
+                    <img src="/gambar/herbivora/sapi.png" alt="Sapi">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Sapi</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('suara/herbivora/sapi.mp3')">🔊</button>
+                </div>
+            </div>
+
+            <div id="her3" class="tabcontent">
+                <div class="content-left">
+                    <img src="/gambar/herbivora/gajah.png" alt="Gajah">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Gajah</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('suara/herbivora/gajah.mp3')">🔊</button>
+                </div>
+            </div>
+
+            <div id="her4" class="tabcontent">
+                <div class="content-left">
+                    <img src="/gambar/herbivora/kuda.png" alt="Kuda">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Kuda</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('suara/herbivora/kuda.mp3')">🔊</button>
+                </div>
+            </div>
+
+            <div id="her5" class="tabcontent">
+                <div class="content-left">
+                    <img src="/gambar/herbivora/keledai.png" alt="Keledai">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Keledai</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('suara/herbivora/keledai.mp3')">🔊</button>
+                </div>
+            </div>
+
+            <div id="her6" class="tabcontent">
+                <div class="content-left">
+                    <img src="/gambar/herbivora/kakatua.png" alt="Kakatua">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Kakatua</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('suara/herbivora/kakatua.mp3')">🔊</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Modal for Burung -->
+    <!-- Modal for Karnivora -->
     <div id="karnivoraModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('karnivoraModal')">&times;</span>
             <h2>Karnivora</h2>
             <div class="tabs">
-                <button class="tablinks" onclick="openTab(event, 'burungTab1')">Tab 1</button>
-                <button class="tablinks" onclick="openTab(event, 'burungTab2')">Tab 2</button>
-                <button class="tablinks" onclick="openTab(event, 'burungTab3')">Tab 3</button>
-                <button class="tablinks" onclick="openTab(event, 'burungTab4')">Tab 4</button>
-                <button class="tablinks" onclick="openTab(event, 'burungTab5')">Tab 5</button>
-                <button class="tablinks" onclick="openTab(event, 'burungTab6')">Tab 6</button>
+                <button class="tablinks" onclick="openTab(event, 'kar1')">Singa</button>
+                <button class="tablinks" onclick="openTab(event, 'kar2')">Kucing</button>
+                <button class="tablinks" onclick="openTab(event, 'kar3')">Macan</button>
+                <button class="tablinks" onclick="openTab(event, 'kar4')">Buaya</button>
+                <button class="tablinks" onclick="openTab(event, 'kar5')">Elang</button>
+                <button class="tablinks" onclick="openTab(event, 'kar6')">Ular</button>
             </div>
-            <div id="burungTab1" class="tabcontent">
+            <div id="kar1" class="tabcontent">
                 <div class="content-left">
-                    <img src="burung_1.jpg" alt="Burung 1">
-                    <video src="burung_1.mp4" controls></video>
+                    <img src="/gambar/karnivora/singa.png" alt="Singa">
+                    <video src="mamalia_1.mp4" controls></video>
                 </div>
                 <div class="content-right">
-                    <h3>Nama Hewan 1</h3>
+                    <h3>Singa</h3>
                     <p>Penjelasan singkat tentang hewan ini.</p>
-                    <button onclick="playSound('burung_1')">🔊</button>
+                    <button onclick="playSound('suara/karnivora/singa.mp3')">🔊</button>
                 </div>
             </div>
-            <!-- Repeat similar structure for other tabs with respective IDs -->
+
+            <div id="kar2" class="tabcontent">
+                <div class="content-left">
+                    <img src="/gambar/karnivora/kucing.png" alt="Kucing">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Kucing</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('suara/karnivora/kucing.mp3')">🔊</button>
+                </div>
+            </div>
+
+            <div id="kar3" class="tabcontent">
+                <div class="content-left">
+                    <img src="/gambar/karnivora/macan.png" alt="Macan">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Macan</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('suara/karnivora/macan.mp3')">🔊</button>
+                </div>
+            </div>
+
+            <div id="kar4" class="tabcontent">
+                <div class="content-left">
+                    <img src="/gambar/karnivora/buaya.png" alt="Buaya">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Buaya</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('suara/karnivora/buaya.mp3')">🔊</button>
+                </div>
+            </div>
+
+            <div id="kar5" class="tabcontent">
+                <div class="content-left">
+                    <img src="/gambar/karnivora/elang.png" alt="Elang">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Elang</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('suara/karnivora/elang.mp3')">🔊</button>
+                </div>
+            </div>
+
+            <div id="kar6" class="tabcontent">
+                <div class="content-left">
+                    <img src="/gambar/karnivora/ular.png" alt="Ular">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Ular</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('suara/karnivora/ular.mp3')">🔊</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Modal for Ikan -->
+    <!-- Modal for Omnivora -->
     <div id="omnivoraModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('omnivoraModal')">&times;</span>
             <h2>Omnivora</h2>
             <div class="tabs">
-                <button class="tablinks" onclick="openTab(event, 'ikanTab1')">Tab 1</button>
-                <button class="tablinks" onclick="openTab(event, 'ikanTab2')">Tab 2</button>
-                <button class="tablinks" onclick="openTab(event, 'ikanTab3')">Tab 3</button>
-                <button class="tablinks" onclick="openTab(event, 'ikanTab4')">Tab 4</button>
-                <button class="tablinks" onclick="openTab(event, 'ikanTab5')">Tab 5</button>
-                <button class="tablinks" onclick="openTab(event, 'ikanTab6')">Tab 6</button>
+                <button class="tablinks" onclick="openTab(event, 'Omni1')">Ayam</button>
+                <button class="tablinks" onclick="openTab(event, 'Omni2')">Babi</button>
+                <button class="tablinks" onclick="openTab(event, 'Omni3')">Bebek</button>
+                <button class="tablinks" onclick="openTab(event, 'Omni4')">Rakun</button>
+                <button class="tablinks" onclick="openTab(event, 'Omni5')">Burung Gagak</button>
+                <button class="tablinks" onclick="openTab(event, 'Omni6')">Tikus</button>
             </div>
-            <div id="ikanTab1" class="tabcontent">
+            <div id="Omni1" class="tabcontent">
                 <div class="content-left">
-                    <img src="ikan_1.jpg" alt="Ikan 1">
-                    <video src="ikan_1.mp4" controls></video>
+                    <img src="mamalia_1.jpg" alt="Mamalia 1">
+                    <video src="mamalia_1.mp4" controls></video>
                 </div>
                 <div class="content-right">
-                    <h3>Nama Hewan 1</h3>
+                    <h3>Ayam</h3>
                     <p>Penjelasan singkat tentang hewan ini.</p>
-                    <button onclick="playSound('ikan_1')">🔊</button>
+                    <button onclick="playSound('mamalia_1')">🔊</button>
                 </div>
             </div>
-            <!-- Repeat similar structure for other tabs with respective IDs -->
+
+            <div id="Omni2" class="tabcontent">
+                <div class="content-left">
+                    <img src="mamalia_1.jpg" alt="Mamalia 1">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Babi</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('mamalia_1')">🔊</button>
+                </div>
+            </div>
+
+            <div id="Omni3" class="tabcontent">
+                <div class="content-left">
+                    <img src="mamalia_1.jpg" alt="Mamalia 1">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Bebek</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('mamalia_1')">🔊</button>
+                </div>
+            </div>
+
+            <div id="Omni4" class="tabcontent">
+                <div class="content-left">
+                    <img src="mamalia_1.jpg" alt="Mamalia 1">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Rakun</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('mamalia_1')">🔊</button>
+                </div>
+            </div>
+
+            <div id="Omni5" class="tabcontent">
+                <div class="content-left">
+                    <img src="mamalia_1.jpg" alt="Mamalia 1">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Burung Gagak</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('mamalia_1')">🔊</button>
+                </div>
+            </div>
+
+            <div id="Omni6" class="tabcontent">
+                <div class="content-left">
+                    <img src="mamalia_1.jpg" alt="Mamalia 1">
+                    <video src="mamalia_1.mp4" controls></video>
+                </div>
+                <div class="content-right">
+                    <h3>Tikus</h3>
+                    <p>Penjelasan singkat tentang hewan ini.</p>
+                    <button onclick="playSound('mamalia_1')">🔊</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Modal for Reptil -->
-    <div id="reptilModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('reptilModal')">&times;</span>
-            <h2>Reptil</h2>
-            <div class="tabs">
-                <button class="tablinks" onclick="openTab(event, 'reptilTab1')">Tab 1</button>
-                <button class="tablinks" onclick="openTab(event, 'reptilTab2')">Tab 2</button>
-                <button class="tablinks" onclick="openTab(event, 'reptilTab3')">Tab 3</button>
-                <button class="tablinks" onclick="openTab(event, 'reptilTab4')">Tab 4</button>
-                <button class="tablinks" onclick="openTab(event, 'reptilTab5')">Tab 5</button>
-                <button class="tablinks" onclick="openTab(event, 'reptilTab6')">Tab 6</button>
-            </div>
-            <div id="reptilTab1" class="tabcontent">
-                <div class="content-left">
-                    <img src="reptil_1.jpg" alt="Reptil 1">
-                    <video src="reptil_1.mp4" controls></video>
-                </div>
-                <div class="content-right">
-                    <h3>Nama Hewan 1</h3>
-                    <p>Penjelasan singkat tentang hewan ini.</p>
-                    <button onclick="playSound('reptil_1')">🔊</button>
-                </div>
-            </div>
-            <!-- Repeat similar structure for other tabs with respective IDs -->
-        </div>
-    </div>
-
-    <!-- Modal for Amfibi -->
-    <div id="amfibiModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('amfibiModal')">&times;</span>
-            <h2>Amfibi</h2>
-            <div class="tabs">
-                <button class="tablinks" onclick="openTab(event, 'amfibiTab1')">Tab 1</button>
-                <button class="tablinks" onclick="openTab(event, 'amfibiTab2')">Tab 2</button>
-                <button class="tablinks" onclick="openTab(event, 'amfibiTab3')">Tab 3</button>
-                <button class="tablinks" onclick="openTab(event, 'amfibiTab4')">Tab 4</button>
-                <button class="tablinks" onclick="openTab(event, 'amfibiTab5')">Tab 5</button>
-                <button class="tablinks" onclick="openTab(event, 'amfibiTab6')">Tab 6</button>
-            </div>
-            <div id="amfibiTab1" class="tabcontent">
-                <div class="content-left">
-                    <img src="amfibi_1.jpg" alt="Amfibi 1">
-                    <video src="amfibi_1.mp4" controls></video>
-                </div>
-                <div class="content-right">
-                    <h3>Nama Hewan 1</h3>
-                    <p>Penjelasan singkat tentang hewan ini.</p>
-                    <button onclick="playSound('amfibi_1')">🔊</button>
-                </div>
-            </div>
-            <!-- Repeat similar structure for other tabs with respective IDs -->
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>

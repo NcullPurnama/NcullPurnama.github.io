@@ -29,11 +29,6 @@ function openTab(evt, tabId) {
     evt.currentTarget.className += " active";
 }
 
-function playSound(animalSound) {
-    const sound = new Audio(animalSound + ".mp3");
-    sound.play();
-}
-
 window.onclick = function(event) {
     const modals = document.getElementsByClassName("modal");
     for (let i = 0; i < modals.length; i++) {
@@ -41,4 +36,9 @@ window.onclick = function(event) {
             modals[i].style.display = "none";
         }
     }
+}
+
+function playSound(filePath) {
+    const sound = new Audio(filePath);
+    sound.play();
 }
