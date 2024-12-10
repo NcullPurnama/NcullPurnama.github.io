@@ -1,0 +1,32 @@
+{
+    "vespa1": {
+      "name": "Vespa Primavera",
+      "year": 2021,
+      "engine": "150cc",
+      "color": "Red",
+      "price": "$4,000",
+      "img": "https://example.com/vespa1.jpg"
+    },
+    "vespa2": {
+      "name": "Vespa GTS",
+      "year": 2020,
+      "engine": "300cc",
+      "color": "Blue",
+      "price": "$6,000"
+    },
+    "vespa3": {
+      "name": "Vespa Sprint",
+      "year": 2019,
+      "engine": "150cc",
+      "color": "Green",
+      "price": "$4,500"
+    },
+    "vespa4": {
+      "name": "Vespa LX",
+      "year": 2018,
+      "engine": "125cc",
+      "color": "Black",
+      "price": "$3,500"
+    }
+  }
+  

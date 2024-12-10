@@ -108,4 +108,45 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+/*=============== MODAL ===============*/
+
+// const buttons = document.querySelectorAll('.popular__button');
+// const modal = document.getElementById('productModal');
+// const closeModal = document.getElementById('closeModal');
+// const modalImage = document.getElementById('modalImage');
+// const modalTitle = document.getElementById('modalTitle');
+// const modalDescription = document.getElementById('modalDescription');
+// const chatButton = document.getElementById('chatButton');
+
+// // Data produk (contoh)
+// const products = [
+//     {
+//         title: "Vespa 1",
+//         description: "Deskripsi Vespa 1.",
+//         image: "/assets/img/popular1.png",
+//         whatsappLink: "https://wa.me/6281234567890?text=Ingin%20tahu%20lebih%20lanjut%20tentang%20Vespa%201"
+//     },
+//     // Tambahkan data produk lainnya
+// ];
+
+// buttons.forEach((button, index) => {
+//     button.addEventListener('click', () => {
+//         const product = products[index];
+//         modalImage.src = product.image;
+//         modalTitle.textContent = product.title;
+//         modalDescription.textContent = product.description;
+//         chatButton.href = product.whatsappLink;
+
+//         modal.style.display = 'flex';
+//     });
+// });
+
+// closeModal.addEventListener('click', () => {
+//     modal.style.display = 'none';
+// });
+
+// window.addEventListener('click', (e) => {
+//     if (e.target === modal) {
+//         modal.style.display = 'none';
+//     }
+// });
