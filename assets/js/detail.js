@@ -36,7 +36,7 @@ async function loadVespaDetails() {
 
     // Mengatur tombol WhatsApp secara dinamis
     const whatsappButton = document.getElementById('whatsapp-button');
-    const whatsappText = `Halo, saya tertarik dengan ${vespa.name}`;
+    const whatsappText = `Halo, saya tertarik dengan ${vespa.name}, apakah anda bisa menjelaskan lebih lanjut?`;
     const whatsappUrl = `https://wa.me/62895325533717?text=${encodeURIComponent(whatsappText)}`;
     whatsappButton.href = whatsappUrl; // Mengupdate URL WhatsApp dengan model Vespa yang benar
 

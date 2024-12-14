@@ -415,6 +415,34 @@ img {
   font-size: var(--smaller-font-size);
 }
 
+/* Carousel Style */
+.carousel {
+  width: 100%;
+  overflow: hidden; /* Sembunyikan gambar di luar area */
+}
+
+.carousel-images {
+  display: flex;
+  animation: slide 6s infinite linear; /* Animasi konstan tanpa dipengaruhi scroll */
+}
+
+.carousel-images img {
+  margin-right: 15px;  /* Memberikan sedikit jarak antar gambar */
+  width: 100%;         /* Sesuaikan lebar gambar */
+  height: auto;        /* Menjaga rasio gambar */
+  flex-shrink: 0;      /* Agar gambar tidak mengecil */
+}
+
+/* Keyframe untuk animasi bergerak */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Geser gambar secara horizontal */
+  }
+}
+
 .about__title{
   text-align: initial;
   margin-bottom: 2rem;
