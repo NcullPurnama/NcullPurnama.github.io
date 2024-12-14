@@ -1,74 +1,55 @@
-// Fungsi untuk memuat data dari file JSON
 async function loadVespaDetails() {
-    try {
-      const response = await fetch('vespa.json');
-      const data = await response.json();
-  
-      // Menampilkan data di bagian detail
-      const details = document.getElementById('vespa-details');
-      details.innerHTML = `
-        <h1>Detail Vespa</h1>
-        <p><strong>Model:</strong> ${data.model}</p>
-        <p><strong>Tahun Produksi:</strong> ${data.tahunProduksi}</p>
-        <p><strong>Warna:</strong> ${data.warna}</p>
-        <p><strong>Kilometer:</strong> ${data.kilometer}</p>
-        <p><strong>Harga:</strong> ${data.harga}</p>
-      `;
-  
-      // Menampilkan gambar di carousel
-      const carousel = document.getElementById('carousel-images');
-      data.gambar.forEach((src, index) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = `Vespa Image ${index + 1}`;
-        img.classList.add(index === 0 ? 'active' : '');
-        carousel.appendChild(img);
-      });
-  
-      // Inisialisasi carousel
-      initCarousel();
-    } catch (error) {
-      console.error('Gagal memuat data Vespa:', error);
-    }
-  }
-  
-  // Fungsi untuk menginisialisasi carousel
-  function initCarousel() {
-    let currentIndex = 0;
-    const images = document.querySelectorAll('#carousel-images img');
-    const prevButton = document.querySelector('.carousel-prev');
-    const nextButton = document.querySelector('.carousel-next');
-  
-    function showImage(index) {
-      images.forEach((img, i) => {
-        img.classList.toggle('active', i === index);
-      });
-    }
-  
-    prevButton.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage(currentIndex);
+  const model = getQueryParameter('model'); // Ambil parameter model dari URL
+  if (!model) return console.error("Parameter 'model' tidak ditemukan.");
+
+  try {
+    const response = await fetch('data.json'); // Load file JSON
+    const data = await response.json(); // Parse data JSON
+    const vespa = data[model];
+
+    if (!vespa) return console.error("Data Vespa tidak ditemukan!");
+
+    // Tampilkan detail Vespa
+    const details = document.getElementById('vespa-details');
+    details.innerHTML = `
+      <h1>${vespa.name}</h1>
+      <p><strong>Year:</strong> ${vespa.year}</p>
+      <p><strong>Engine:</strong> ${vespa.engine}</p>
+      <p><strong>Color:</strong> ${vespa.color}</p>
+      <p><strong>Price:</strong> ${vespa.price}</p>
+    `;
+
+    // Menambahkan gambar Vespa
+    const imageContainer = document.createElement('div');
+    imageContainer.className = 'image-gallery';
+
+    vespa.images.forEach((path, index) => {
+      const img = document.createElement('img');
+      img.src = path; // Path dari JSON
+      img.alt = `${vespa.name} Image ${index + 1}`;
+      img.style.width = '200px';
+      img.style.margin = '5px';
+      imageContainer.appendChild(img);
     });
-  
-    nextButton.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % images.length;
-      showImage(currentIndex);
-    });
-  
-    // Tampilkan gambar pertama
-    showImage(currentIndex);
+
+    details.appendChild(imageContainer);
+
+    // Mengatur tombol WhatsApp secara dinamis
+    const whatsappButton = document.getElementById('whatsapp-button');
+    const whatsappText = `Halo, saya tertarik dengan ${vespa.name}`;
+    const whatsappUrl = `https://wa.me/62895325533717?text=${encodeURIComponent(whatsappText)}`;
+    whatsappButton.href = whatsappUrl; // Mengupdate URL WhatsApp dengan model Vespa yang benar
+
+  } catch (error) {
+    console.error('Gagal memuat data Vespa:', error.message);
   }
-  
-  // Fungsi untuk kembali ke halaman sebelumnya
-  function goBack() {
-    window.history.back();
-  }
-  
-  // Fungsi untuk menghubungi penjual
-  function chatSeller() {
-    alert('Menghubungi penjual...');
-  }
-  
-  // Memuat data saat halaman selesai dimuat
-  window.onload = loadVespaDetails;
-  
+}
+
+// Fungsi untuk mendapatkan parameter query
+function getQueryParameter(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+// Load detail saat halaman dimuat
+window.onload = loadVespaDetails;

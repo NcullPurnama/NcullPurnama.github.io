@@ -913,6 +913,23 @@ img {
   .logos__container{
     gap: 2.5rem;
   }
+
+  .featured__content {
+    grid-template-columns: repeat(2, 1fr); /* Tampilkan 2 kolom di layar kecil */
+  }
+
+  .featured__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .featured__img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
 }
 
 /* For medium devices */
@@ -957,7 +974,7 @@ img {
     height: calc((--header-height) + 1.5rem);
   }
 
-  /* .nav__toggle,
+  .nav__toggle,
   .nav__close{
     display: none;
   }
@@ -966,7 +983,7 @@ img {
    flex-direction: row;
    column-gap: 3rem;
    padding-top: 0; 
-  } */
+  }
 
   .nav__link{
     font-size: var(--normal-font-size);

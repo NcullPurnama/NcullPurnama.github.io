@@ -1,32 +1,98 @@
 {
-    "vespa1": {
-      "name": "Vespa Primavera",
-      "year": 2021,
-      "engine": "150cc",
-      "color": "Red",
-      "price": "$4,000",
-      "img": "https://example.com/vespa1.jpg"
-    },
-    "vespa2": {
-      "name": "Vespa GTS",
-      "year": 2020,
-      "engine": "300cc",
-      "color": "Blue",
-      "price": "$6,000"
-    },
-    "vespa3": {
-      "name": "Vespa Sprint",
-      "year": 2019,
-      "engine": "150cc",
-      "color": "Green",
-      "price": "$4,500"
-    },
-    "vespa4": {
-      "name": "Vespa LX",
-      "year": 2018,
-      "engine": "125cc",
-      "color": "Black",
-      "price": "$3,500"
-    }
+  "vespa1": {
+    "name": "Vespa Primavera",
+    "year": 2021,
+    "engine": "150cc",
+    "color": "Red",
+    "price": "$4,000",
+    "images": [
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg"
+    ]
+  },
+  "vespa2": {
+    "name": "Vespa GTS Super",
+    "year": 2020,
+    "engine": "300cc",
+    "color": "Blue",
+    "price": "$5,500",
+    "images": [
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg"
+    ]
+  },
+  "vespa3": {
+    "name": "Vespa Sprint 150",
+    "year": 2019,
+    "engine": "150cc",
+    "color": "Green",
+    "price": "$3,800",
+    "images": [
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg"
+    ]
+  },
+  "vespa4": {
+    "name": "Vespa LX 125",
+    "year": 2018,
+    "engine": "125cc",
+    "color": "Black",
+    "price": "$3,200",
+    "images": [
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg"
+    ]
+  },
+  "vespa5": {
+    "name": "Vespa S 125",
+    "year": 2022,
+    "engine": "125cc",
+    "color": "White",
+    "price": "$4,500",
+    "images": [
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg"
+    ]
+  },
+  "vespa6": {
+    "name": "Vespa Elettrica",
+    "year": 2022,
+    "engine": "Electric",
+    "color": "Silver",
+    "price": "$7,000",
+    "images": [
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg"
+    ]
+  },
+  "vespa7": {
+    "name": "Vespa 946 Dior",
+    "year": 2021,
+    "engine": "125cc",
+    "color": "Gold",
+    "price": "$12,000",
+    "images": [
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg"
+    ]
+  },
+  "vespa8": {
+    "name": "Vespa Sei Giorni",
+    "year": 2019,
+    "engine": "300cc",
+    "color": "Matte Green",
+    "price": "$6,500",
+    "images": [
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg",
+      "/assets/img/vespa/vespa1.jpg"
+    ]
   }
-  
+}

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detail Vespa</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/assets/css/detail.css">
 </head>
 <body>
   <div class="container">
@@ -22,11 +22,14 @@
 
     <!-- Tombol -->
     <div class="actions">
-      <button onclick="goBack()">Kembali</button>
-      <button onclick="chatSeller()">Chat Penjual</button>
+      <a href="index.html"><button>Kembali</button></a>
+      
+      <a id="whatsapp-button" href="#" class="wa-button" target="_blank">
+        <button>Chat via WhatsApp</button>
+      </a>
     </div>
   </div>
 
-  <script src="detail.js"></script>
+  <script src="/assets/js/detail.js"></script>
 </body>
 </html>
