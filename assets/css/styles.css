@@ -61,12 +61,16 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   /* background-color: var(--body-color); */
-  background-color: var(--text-color-light);
+  /* background: rgb(249,201,1);
+  background: linear-gradient(35deg, rgba(249,201,1,1) 44%, rgba(246,224,0,1) 100%); */
+  background: rgb(255,255,255);
+  background: linear-gradient(117deg, rgba(255,255,255,1) 0%, rgba(255,244,244,1) 100%);
   color: var(--text-color);
 }
 
 h1, h2, h3 {
-  color: var(--title-color);
+  /* color: var(--title-color); */
+  color: rgb(54, 50, 50);
   font-weight: var(--font-semi-bold);
 }
 
@@ -459,7 +463,9 @@ img {
 .popular__card{
   position: relative;
   width: 238px;
-  background-color: var(--container-color);
+  /* background-color: var(--container-color); */
+  background: rgb(51,51,51);
+  background: linear-gradient(54deg, rgba(51,51,51,1) 46%, rgba(0,0,0,1) 100%);
   padding: 2rem 1.5rem 1.5rem;
   border-radius: 1rem;
   margin-bottom: 3.5rem;
@@ -481,16 +487,18 @@ img {
 .popular__title{
   font-size: var(--normal-font-size);
   margin-bottom: .25rem;
+  color: #fff;
 }
 .popular__subtitle{
   font-size: var(--normal-font-size);
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: #fff;
   font-weight: 400;
 }
 
 .popular__img{
   width: 160px;
-  margin: .75rem 0 1.25rem 1.5rem;
+  margin: .75rem 0 1.25rem 3.5rem;
   transition: .3s;
 }
 
@@ -499,6 +507,7 @@ img {
   grid-template-columns: repeat(2, max-content);
   gap: .5rem 1.25rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 .popular__data-group{
@@ -515,6 +524,7 @@ img {
 
 .popular__price{
   font-size: var(--h3-font-size);
+  color: #fff;
 }
 
 .popular__button{
@@ -566,7 +576,9 @@ img {
 
 .features__card{
   width: 112px;
-  background-color: hsla(0, 0%, 100%, .1);
+  /* background-color: hsla(0, 0%, 100%, .1); */
+  background: rgb(51,51,51);
+  background: linear-gradient(54deg, rgba(51,51,51,1) 46%, rgba(0,0,0,1) 100%);
   backdrop-filter: blur(16px);
   border-radius: 1.25rem;
   padding: .75rem 2rem;
